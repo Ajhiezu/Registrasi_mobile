@@ -9,82 +9,224 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="202dp"
-        android:layout_height="263dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="499dp"
+        android:layout_height="270dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/registration" />
+        app:srcCompat="@drawable/vector" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="56dp"
-        android:text="Registrasi"
-        android:gravity="center"
-        android:textSize="28dp"
-        android:fontFamily="@font/poppinsbold"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/shape1" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_marginTop="356dp"
-        android:orientation="vertical"
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp">
+        >
 
-        <EditText
-            android:id="@+id/editTextText"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:hint="Enter Your Full Name" />
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/editTextText2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:hint="Enter Your Username" />
+            <TextView
+                android:id="@+id/label_registrasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Registrasi"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
 
-        <EditText
-            android:id="@+id/editTextDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="date"
-            android:hint="Enter Your Date"/>
+            <TextView
+                android:id="@+id/label_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Fullname"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
 
-        <EditText
-            android:id="@+id/editTextPhone2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="phone"
-            android:hint="Enter Your Number Phone"/>
+            <EditText
+                android:id="@+id/txt_fullname"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-10dp"
+                android:hint="Enter Your Full Name" />
 
-        <EditText
-            android:id="@+id/editTextText3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:hint="Enter Your Address" />
+            <TextView
+                android:id="@+id/label_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Username"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Submit" />
+            <EditText
+                android:id="@+id/txt_username"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-10dp"
+                android:hint="Enter Your Username" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/label_tgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Tanggal Lahir"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/txt_tgl"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-10dp"
+                android:hint="Enter Your Date"
+                android:focusable="false"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/label_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="E-mail"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/txt_email"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-10dp"
+                android:hint="Enter Your E-mail"
+                android:inputType="textEmailAddress"/>
+            <TextView
+                android:id="@+id/label_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/txt_password"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-10dp"
+                android:hint="Enter Your Password"
+                android:inputType="textPassword"/>
+            <TextView
+                android:id="@+id/label_confirmpsw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Confirm Password"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/txt_confirmpsw"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-10dp"
+                android:hint="Confirm Your Password"
+                android:inputType="textPassword"/>
+            <TextView
+                android:id="@+id/label_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Choose Your Gender"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+            <Spinner
+                android:id="@+id/listView"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/spinner_background" />
+            <TextView
+                android:id="@+id/label_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Phone"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/txt_nohp"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-10dp"
+                android:hint="Enter Your Number Phone"
+                android:inputType="phone"/>
+            <TextView
+                android:id="@+id/label_alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/txt_alamat"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-10dp"
+                android:hint="Enter Your Address"/>
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Submit"
+                android:textSize="25dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema khusus untuk DatePickerDialog -->
+    <style name="SpinnerDatePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:datePickerStyle">@style/SpinnerDatePicker</item>
+        <item name="android:buttonBarButtonStyle">@style/CustomDatePickerButton</item>
+    </style>
+
+    <!-- Gaya untuk DatePicker menggunakan mode spinner -->
+    <style name="SpinnerDatePicker" parent="android:Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+
+    <!-- Gaya khusus untuk tombol OK dan Cancel di DatePickerDialog -->
+    <style name="CustomDatePickerButton" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#FFFFFF</item> <!-- Warna teks putih -->
+        <item name="android:backgroundTint">#000000</item> <!-- Warna background hitam -->
+    </style>
+
+    <!-- Gaya untuk tombol OK di dialog -->
+    <style name="CustomButton.OK" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#FFFFFF</item> <!-- Warna teks putih -->
+        <item name="android:background">#000000</item> <!-- Warna background hitam -->
+    </style>
+
+    <!-- Gaya untuk tombol Cancel di dialog -->
+    <style name="CustomButton.Cancel" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#FFFFFF</item> <!-- Warna teks putih -->
+        <item name="android:background">#000000</item> <!-- Warna background hitam -->
+    </style>
+</resources>
